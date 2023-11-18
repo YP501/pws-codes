@@ -177,7 +177,7 @@ int main()
     // Schrijf de titels van de kolommen als eerst naar het bestand zodat die altijd bovenaan staan
     csvResults << "Round;Drawn card;Amount black;Amount Red;Cheater choice;Cheater win chance;Cheater won?;Legit choice;Legit win chance;Legit won?" << endl;
 
-    GameInstance cardGame(cardsPerGame);
+    GameInstance cardGame(cardsPerGame); // Initialiseer een game met de GameInstance class
     for (int round = 0; round < cardGame.initialDeckSize; round++)
     {
       // Zet een seed voor de random number generator waardoor deze altijd anders zal zijn
